@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog's Age Calculation Task <Code></Code></title>
+</head>
+
+<body>
+    <h1>Dog's Age Calculation</h1>
+</body>
+<script>
+    // myAge = my age as a number
+    var myAge = 20; 
+
+     // variable named earlyYears saves the value 2
+    var earlyYears = 2;
+
+    // First two years count as 10.5 dog years each
+    earlyYears *= 10.5; 
+
+     // Subtract the first two years
+    var laterYears = myAge - 2;
+
+    // Each additional year counts as 4 dog years
+    laterYears *= 4; 
+
+    // Total dog years
+    var myAgeInDogYears = earlyYears + laterYears; 
+    
+     // Convert name to lowercase
+    var myName = "jolly".toLowerCase(); 
+
+      // Display the result
+    console.log(`My name is ${myName}. I am ${myAge} years old in human years which is ${myAgeInDogYears} years old in dog years.`);
+
+</script>
+</html>

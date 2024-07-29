@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK-9</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    var raceNumber = Math.floor(Math.random() * 1000);
+    // a random raceNumber
+
+    var registeredEarly = true;
+    // we can change this to test different runner conditions
+    var runnerAge = parseInt(prompt("Enter your age: "), 25);
+
+    // var runnerAge = 25;
+
+    // control flow statement that checks whether the runner is an adult AND registered early.
+    if (runnerAge > 18 && registeredEarly) {
+        raceNumber += 1000;
+    }
+    if (runnerAge > 18 && registeredEarly) {
+        console.log(`Race number ${raceNumber}: You will race at 9:30 am.`);
+        alert(`Race number ${raceNumber}: You will race at 9:30 am.`);
+    } else if (runnerAge > 18 && !registeredEarly) {
+        console.log(`Race number ${raceNumber}: You will race at 11:00 am.`);
+        alert(`Race number ${raceNumber}: You will race at 11:00 am.`);
+    } else if (runnerAge < 18) {
+        console.log(`Race number ${raceNumber}: You will race at 12:30 pm.`);
+        alert(`Race number ${raceNumber}: You will race at 12:30 pm.`);
+    } else {
+        console.log(`Race number ${raceNumber}: Please see the registration desk.`);
+        alert(`Race number ${raceNumber}: Please see the registration desk.`);
+    }
+</script>
+
+</html>
